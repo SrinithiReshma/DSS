@@ -1,13 +1,160 @@
+
+/* General styling */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFE1FF; /* Light pinkish background */
+  color: #783873; /* Deep purple for text */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  display: flex; /* Enable flexbox for body */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  flex-direction: column; /* Stack elements vertically */
+  min-height: 100vh; /* Full viewport height */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Title styling */
+.title {
+  text-align: center;
+  font-size: 2em; /* Adjust the title size to a readable value */
+  font-weight: bold;
+  margin: 20px 0; /* Margin above and below */
+}
+
+/* Centered logo styling */
+.logo {
+  margin-bottom: 20px;
+  padding-top:100px;
+  border-radius: 8px;
+  background-color: #c443a8; /* Updated to light purple background */
+  display: block;
+  margin: 0 auto; /* Center the logo */
+  width: 1000px; /* Adjust the width as needed */
+  height: 450px; /* Maintain aspect ratio */
+  object-fit: cover; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below the logo */
+}
+
+/* Container styling */
+.container {
+  max-width: 900px; /* Maximum width of the container */
+  margin: 20px auto; /* Center the container horizontally */
+  padding: 20px; /* Padding around the container */
+  border: 1px solid #ccc; /* Border for the container */
+  border-radius: 8px; /* Rounded corners for the container */
+  background-color: #fff; /* White background for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  display: flex; /* Enable flexbox for container */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center the items */
+}
+
+/* Navigation buttons styling */
+.nav {
+  display: flex; /* Enable flexbox for horizontal alignment */
+  justify-content: center; /* Center the buttons */
+  margin-bottom: 20px; /* Space below navigation */
+}
+
+.nav button {
+  margin: 0 10px; /* Space between buttons */
+  padding: 10px 20px;
+  background-color: #6574b6; /* Medium purple */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em; /* Button text size */
+  transition: background-color 0.2s;
+}
+
+.nav button:hover {
+  background-color: #d4bd56; /* Darker purple on hover */
+}
+
+/* Section styling */
+.section {
+  max-width: 800px; /* Maximum width for each section */
+  margin: 20px auto; /* Center the section and add vertical spacing */
+  padding: 20px; /* Padding inside the section */
+  border: 1px solid #ccc; /* Border for each section */
+  border-radius: 8px; /* Rounded corners for sections */
+  background-color: #f9f9f9; /* Light background color */
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items in section */
+}
+
+/* Section headers */
+h2 {
+  color: #433878; /* Deep purple */
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  border-bottom: 2px solid #7E60BF; /* Medium purple underline */
+  padding-bottom: 10px;
+}
+
+/* Input fields */
+input[type="number"],
+input[type="text"] {
+  width: 90%; /* Width of input fields */
+  padding: 10px; /* Adjust padding for better spacing */
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border: 2px solid #E4B1F0; /* Light purple border */
+  border-radius: 6px;
+  font-size: 1em;
+  background-color: #FFE1FF; /* Pinkish background for inputs */
+}
+
+/* Buttons */
+button {
+  width: 200px; /* Fixed width */
+  height: 55px; 
+  background-color: #04c5f5; /* Medium purple button */
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #b84faa;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ce6ddb; /* Darker purple for hover effect */
+}
+
+/* Error messages */
+.error {
+  color: #d9534f;
+  font-size: 0.9em;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
+
+/* Generated value display */
+p {
+  background-color: #E4B1F0; /* Light purple background for generated values */
+  padding: 8px;
+  border-left: 4px solid #7E60BF; /* Medium purple highlight */
+  border-radius: 4px;
+  font-size: 1em;
+  color: #433878; /* Dark text for readability */
+}
+
+/* Form labels */
+label {
+  font-weight: bold;
+  color: #433878; /* Deep purple */
+}
+
+/* Smooth scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.app-header {
+  background-color: #E4B1F0;
 }
